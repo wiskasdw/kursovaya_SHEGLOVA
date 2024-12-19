@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Lectures";
+}
+@model List<ISRPOLectures.Models.PdfFile>
+
+    <div class="lectures-list">
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var pdfFile in Model)
+        {
+                        <div class="lecture-item">
+                            <a href="@pdfFile.FilePath" target="_blank">@pdfFile.FileName</a>
+                            <p>Upload Date: @pdfFile.UploadDate</p>
+                        </div>
+        }
+    }
+    else
+    {
+                <p>No lectures uploaded yet.</p>
+    }
+    </div>

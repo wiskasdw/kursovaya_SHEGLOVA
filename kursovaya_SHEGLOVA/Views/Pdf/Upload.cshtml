@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Upload PDF";
+}
+@model ISRPOLectures.Models.PdfFile
+
+    <form method="post" asp-action="Upload" enctype="multipart/form-data">
+        <label for="file">Upload PDF:</label>
+        <input type="file" name="file" id="file" />
+        <button type="submit">Upload</button>
+    </form>

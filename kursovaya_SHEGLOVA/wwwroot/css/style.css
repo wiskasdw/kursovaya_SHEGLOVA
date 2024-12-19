@@ -1,0 +1,128 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Светло-голубой фон */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s; /* Плавный переход */
+}
+
+    body.dark-mode {
+        background-color: #263238; /* Темный фон */
+        color: #ffffff; /* Светлый текст */
+    }
+
+header {
+    background-color: #4fc3f7; /* Темно-голубой фон для заголовка */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode header {
+    background-color: #1c313a; /* Темный фон для заголовка */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease; /* Плавное изменение цвета */
+        }
+
+            nav ul li a:hover {
+                color: #ffeb3b; /* Желтый цвет при наведении */
+            }
+
+main {
+    padding: 20px;
+    opacity: 1; /* Начальная непрозрачность для анимации */
+    transition: opacity 1s ease; /* Плавное появление */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4fc3f7;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body.dark-mode footer {
+    background-color: #1c313a; /* Темный фон для подвала */
+}
+
+.lecture-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lecture-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff; /* Белый фон для лекций */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Указатель при наведении */
+}
+
+body.dark-mode .lecture-item {
+    background-color: #37474f; /* Темный фон для лекций в темной теме */
+    color: #ffffff; /* Светлый текст для лекций */
+}
+
+.lecture-item:hover {
+    background-color: #e0f7fa; /* Цвет при наведении */
+}
+
+body.dark-mode .lecture-item:hover {
+    background-color: #455a64; /* Цвет при наведении в темной теме */
+}
+
+.toggle-theme {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4fc3f7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .toggle-theme {
+    background-color: #00796b; /* Темный фон для кнопки в темной теме */
+}
+
+.toggle-theme:hover {
+    background-color: #00796b; /* Цвет кнопки при наведении */
+}
+
+body.dark-mode .toggle-theme:hover {
+    background-color: #004d40; /* Темный цвет при наведении на кнопку в темной теме */
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #4fc3f7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+    .btn:hover {
+        background-color: #00796b;
+    }
